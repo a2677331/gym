@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* font type for footer */
+
+@font-face {
+    font-family: Cyber;
+    src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+    font-display: swap;
+}
+
+/* 
+Setup for stickey footer
+Reference: https://css-tricks.com/couple-takes-sticky-footer/  
+*/
+
+body {
+    display: flex;
+    flex-direction: column;
+ }
+ main {
+    flex: 1 0 auto;
+ }
+ footer {
+    flex-shrink: 0;
+ }
+
+/* Footer Styles */
+
+footer {
+    font-family: Cyber;
+    color: #eee;
+    background-color: #374B43;
+    display: flex;
+    width: 100%;
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    padding: 5px;
+}
+
+/* Footer's <a> tag styles */
+
+footer a {
+    text-decoration: none;
+    color: #eee
+}
+
+footer a:hover {
+    color: rgb(72, 248, 148);
+}
+
+footer a {
+    transition: color 0.1s ease-in;
+}
+
+/* Footer's <hr> tag styles */
+
+footer > div > hr {
+    border: 1px solid #fff;
+    width: 77px;
+    margin: 5px 0px 5px 0px;
+  }
+
+/* left footer and right footer styles */
+
+.left-footer {
+    font-size: 1.8em;
+    line-height: 1em;
+    width: 16%;
+    margin: auto;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.right-footer {
+    font-size: 1em;
+    margin: auto;
+}
+
+/* the right-most footer style */
+
+#footer-link > div:nth-child(5) {
+    width: 40%;
+    text-align: center;
+    margin-left: 10px; 
+}
+

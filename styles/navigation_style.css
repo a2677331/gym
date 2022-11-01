@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* font type for navigation */
+
+@font-face {
+    font-family: Cyber;
+    src: url("../fonts/Blender-Pro-Bold.otf");
+    font-display: swap;
+  }
+
+/* Navigation bar styles */
+
+nav {
+    font-family: Cyber, arial, sans-serif;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+/* clear fix for float left */
+
+nav::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Navigation button container styles */
+
+#nav-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-size: auto;
+    background-origin: border-box;
+}
+
+/* navi button icons */
+
+img.icons {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+/* Styles applied to all buttons */
+
+.nav-buttons {
+    line-height: 50px;
+    width: 280px;
+    display: inline-block;
+    margin: 10px 20px 10px 20px;
+    border: 4px solid #000;
+    font-size: 35px;
+    box-shadow: #000 4px 4px 2px;
+    background-color: #fff;
+    transition: background-color 100ms ease-out;
+    border-radius: 0.4rem;
+    position: relative; /* For placing the icon as "absolute" correctly */
+}
+
+/* Hover styles for navi buttons */
+
+.nav-buttons:hover {
+    background-color: #48f894;
+    will-change: transform; /* Optimize for animation */
+}
+
+/* Pressed styles for navi buttons */
+
+.nav-buttons:active {
+    box-shadow: 
+    black 2px 2px 1px 0px inset, 
+    rgba(255, 255, 255, 0.5) -3px -3px 1px 1px inset;
+    transform: scale(0.95);
+}
+
+/* To show different background .png images when hovering over buttons */
+#nav-container:has(#chest-button > div:hover) {
+    background-image: url('../images/chest.png');
+}
+
+#nav-container:has(#legs-button > div:hover) {
+    background-image: url('../images/legs.png');
+}
+
+#nav-container:has(#shoulder-button > div:hover) {
+    background-image: url('../images/shoulder.png');
+}
+
+#nav-container:has(#back-button > div:hover) {
+    background-image: url('../images/back.png');
+}
