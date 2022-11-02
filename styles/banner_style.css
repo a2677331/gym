@@ -1,9 +1,7 @@
 @charset "utf-8";
 
-/* Font style */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap');
+/* Font style */
 
 @font-face {
   font-family: Cyber;
@@ -15,6 +13,7 @@
   font-family: 'Exo 2';
   src: url("../fonts/Exo2-ThinItalic.woff") format("woff");
 }
+
 
 /* Skip link style */
 
@@ -32,6 +31,7 @@
   transform: translateY(0%);
 }
 
+
 /* Banner Style */
 
 header {
@@ -43,15 +43,18 @@ header {
   line-height: 2.6em;
 }
 
+
 /* Header paragrah style */
 
 header p {
-  font: normal 18px 'Poppins', sans-serif;
+  font: normal 28px Cyber, sans-serif;
   margin-top: 15px;
   color: #000;
 }
 
+
 /* Header caption style */
+
 #banner-caption {
   transition: transform 0.55s; /* shrink slowler */
   will-change: scale; /* let GPU handle caption animation smoothly */
@@ -62,24 +65,25 @@ header p {
   transition: transform 0.25s; /* grow faster */
 }
 
+
 /* Text style and Border style */
 
 .banner {
   /* Text style */
-
   font-size: 5rem;
   color: #fff; 
+  animation: pulsate 1.5s infinite alternate;
   text-shadow: 
-  0 0 4px #00DEA4,
-  0 0 10px #00DEA4,
-  0 0 17px #00DEA4,
-  0 0 34px #00DEA4,
-  0 0 72px #00DEA4,
-  0 0 80px #00DEA4;
-  will-change: animation;
-
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px #00DEA4,
+  0 0 82px #00DEA4,
+  0 0 92px #00DEA4,
+  0 0 102px #00DEA4,
+  0 0 151px #00DEA4;
+ 
   /* border style */
-
   border: 0.1rem solid #fff;
   border-radius: 2rem;
   padding: 0.4em;
@@ -94,56 +98,32 @@ header p {
   inset 0 0 14px #08f;
 }
 
+
 /* Banner Animaion */
 /* Animation effect references: https://css-tricks.com/how-to-create-neon-text-with-css/ */
-.banner:hover {
-  animation: banner-glow-shrink 1.1s ease-in-out infinite alternate;
-}
+@keyframes pulsate {
 
-@keyframes banner-glow-shrink {
-
-    /* Smaller glow */
-
-    0% {
-      text-shadow: 
-      0 0 4px #00DEA4,
-      0 0 10px #00DEA4,
-      0 0 17px #00DEA4,
-      0 0 34px #00DEA4,
-      0 0 72px #00DEA4,
-      0 0 80px #00DEA4;
-  
-      box-shadow: 
-      0 0 0.4px #fff,
-      0 0 1px #fff,
-      0 0 1.7px #fff,
-      0 0 3.4px #08f,
-      0 0 7.2px #08f,
-      0 0 8px #08f,
-      0 0 9.3px #08f,
-      inset 0 0 14px #08f;
-    }
-
-  /* Larger glow*/
-  
   100% {
     text-shadow:
-      0 0 4px #00DEA4,
-      0 0 11px #00DEA4,
-      0 0 19px #00DEA4,
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
       0 0 40px #00DEA4,
       0 0 80px #00DEA4,
       0 0 90px #00DEA4,
-      0 0 100px #00DEA4;
+      0 0 100px #00DEA4,
+      0 0 150px #00DEA4;
+  }
 
-      box-shadow: 
-      0 0 0.4px #fff,
-      0 0 1.1px #fff,
-      0 0 1.9px #fff,
-      0 0 4.0px #08f,
-      0 0 8.0px #08f,
-      0 0 9.0px #08f,
-      0 0 10px #08f,
-      inset 0 0 15px #08f;
+  0% {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #00DEA4,
+      0 0 45px #00DEA4,
+      0 0 55px #00DEA4,
+      0 0 70px #00DEA4,
+      0 0 80px #00DEA4;
   }
 }

@@ -46,6 +46,7 @@ footer a {
 
 footer a:hover {
     color: rgb(72, 248, 148);
+    text-decoration: underline;
 }
 
 footer a {
@@ -82,5 +83,13 @@ footer > div > hr {
     width: 40%;
     text-align: center;
     margin-left: 10px; 
+}
+
+#footer-link > div:nth-child(5) > p > a {
+    color:rgb(72, 248, 148);
+}
+
+#footer-link > div:nth-child(5) > p > a:hover {
+    text-decoration: underline;
 }
 
