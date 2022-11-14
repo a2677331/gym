@@ -57,37 +57,16 @@ header p {
 /* Header caption style */
 
 #banner-caption {
-  transition: transform 0.55s; /* shrink slowler */
-  will-change: scale; /* let GPU handle caption animation smoothly */
+  transition: transform 0.55s;
+  /* shrink slowler */
+  will-change: scale;
+  /* let GPU handle caption animation smoothly */
 }
 
 #banner-caption:hover {
-  transform: scale(1.03);
-  transition: transform 0.25s; /* grow faster */
-}
-
-
-/* Text style and Border style */
-
-.banner {
-  /* Text style */
-  font-size: 5rem;
-  color: #fff; 
-  animation: pulsate 2s infinite alternate;
- 
-  /* border style */
-  border: 0.1rem solid #fff;
-  border-radius: 2rem;
-  padding: 0.4em;
-  box-shadow: 
-  0 0 0.4px #fff,
-  0 0 1px #fff,
-  0 0 1.7px #fff,
-  0 0 3.4px #08f,
-  0 0 7.2px #08f,
-  0 0 8px #08f,
-  0 0 9.3px #08f,
-  inset 0 0 14px #08f;
+  transform: scale(1.06);
+  transition: transform 0.25s;
+  /* grow faster */
 }
 
 
@@ -95,27 +74,65 @@ header p {
 /* Animation effect references: https://css-tricks.com/how-to-create-neon-text-with-css/ */
 @keyframes pulsate {
 
+  0% {
+    text-shadow:
+      /* White glow */
+    0 0 4px #fff,
+    0 0 11px #fff,
+      /* Green glow */
+    0 0 10px #00DEA4,
+    0 0 45px #00DEA4,
+    0 0 55px #00DEA4,
+    0 0 70px #00DEA4,
+    0 0 80px #00DEA4;
+  }
+
   100% {
     text-shadow:
+        /* White glow */
       0 0 4px #fff,
       0 0 11px #fff,
-      0 0 19px #fff,
+      0 0 20px #fff,
+        /* Green glow */
       0 0 40px #00DEA4,
       0 0 80px #00DEA4,
       0 0 90px #00DEA4,
       0 0 100px #00DEA4,
       0 0 150px #00DEA4;
   }
+}
 
-  0% {
-    text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px #00DEA4,
-      0 0 45px #00DEA4,
-      0 0 55px #00DEA4,
-      0 0 70px #00DEA4,
-      0 0 80px #00DEA4;
-  }
+/* Text style */
+
+.banner {
+  font-size: 5rem;
+  /* White glow */
+  color: #fff;
+  text-shadow:
+  /* Green glow */
+  0 0 4px #fff,
+  0 0 11px #fff,
+  0 0 10px #00DEA4,
+  0 0 45px #00DEA4,
+  0 0 55px #00DEA4,
+  0 0 70px #00DEA4,
+  0 0 80px #00DEA4;
+
+  /* border style */
+  border: 0.1rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow:
+    0 0 0.4px #fff,
+    0 0 1px #fff,
+    0 0 1.7px #fff,
+    0 0 3.4px #08f,
+    0 0 7.2px #08f,
+    0 0 8px #08f,
+    0 0 9.3px #08f,
+    inset 0 0 14px #08f;
+}
+
+.banner:hover {
+  animation: pulsate 0.6s infinite alternate;
 }
