@@ -32,8 +32,6 @@ footer {
     background-color: #374B43;
     display: flex;
     width: 100%;
-    border-top: 4px solid #000;
-    border-bottom: 4px solid #000;
     padding: 5px;
 }
 
@@ -56,7 +54,6 @@ footer a {
 /* Footer's <hr> tag styles */
 
 footer > div > hr {
-    border: 1px solid #fff;
     width: 77px;
     margin: 5px 0px 5px 0px;
   }
