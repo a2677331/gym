@@ -55,7 +55,7 @@ img.icons {
     font-size: 35px;
     box-shadow: #000 4px 4px 2px;
     background-color: #fff;
-    transition: background-color 100ms ease-out;
+    transition: all 100ms;
     border-radius: 0.4rem;
     position: relative; /* For placing the icon as "absolute" correctly */
 }
@@ -73,7 +73,7 @@ img.icons {
     box-shadow: 
     black 2px 2px 1px 0px inset, 
     rgba(255, 255, 255, 0.5) -3px -3px 1px 1px inset;
-    transform: scale(0.95);
+    transform: scale(0.97);
 }
 
 /* To show different background .png images when hovering over buttons */

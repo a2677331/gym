@@ -11,7 +11,7 @@
 }
 
 .videos {
-    /* Video contaner styles */
+    /* Video container styles */
     display: inline-block;
     background-color: #000;
 
@@ -23,10 +23,14 @@
     height: 189px;
 }
 
+.videos:hover {
+    transition: all .2s;
+    transition-delay: 1.1s;
+    transform: scale(1.15);
+}
+
 /* Styles for all video tags */
 
 video {
     height: 100%;
 }
-
-

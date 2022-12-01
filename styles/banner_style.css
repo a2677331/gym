@@ -44,12 +44,12 @@ header {
 }
 
 
-/* Header paragrah style */
+/* Header paragraph style */
 
 header p {
   font: normal 28px Cyber, sans-serif;
   margin-top: 15px;
-  color: #000;
+  color: #fff;
   will-change: animation;
 }
 
@@ -58,7 +58,7 @@ header p {
 
 #banner-caption {
   transition: transform 0.55s;
-  /* shrink slowler */
+  /* shrink slower */
   will-change: scale;
   /* let GPU handle caption animation smoothly */
 }
@@ -70,53 +70,20 @@ header p {
 }
 
 
-/* Banner Animaion */
-/* Animation effect references: https://css-tricks.com/how-to-create-neon-text-with-css/ */
-@keyframes pulsate {
-
-  0% {
-    text-shadow:
-      /* White glow */
-    0 0 4px #fff,
-    0 0 11px #fff,
-      /* Green glow */
+/* Banner style */
+.banner {
+  /* Text style */
+  font-size: 5rem;
+  color: #fff;
+  text-shadow:
+    0 0 1px #fff,
+    0 0 10px #fff,
+    0 0 4px #00DEA4,
     0 0 10px #00DEA4,
     0 0 45px #00DEA4,
     0 0 55px #00DEA4,
     0 0 70px #00DEA4,
     0 0 80px #00DEA4;
-  }
-
-  100% {
-    text-shadow:
-        /* White glow */
-      0 0 4px #fff,
-      0 0 11px #fff,
-      0 0 20px #fff,
-        /* Green glow */
-      0 0 40px #00DEA4,
-      0 0 80px #00DEA4,
-      0 0 90px #00DEA4,
-      0 0 100px #00DEA4,
-      0 0 150px #00DEA4;
-  }
-}
-
-/* Text style */
-
-.banner {
-  font-size: 5rem;
-  /* White glow */
-  color: #fff;
-  text-shadow:
-  /* Green glow */
-  0 0 4px #fff,
-  0 0 11px #fff,
-  0 0 10px #00DEA4,
-  0 0 45px #00DEA4,
-  0 0 55px #00DEA4,
-  0 0 70px #00DEA4,
-  0 0 80px #00DEA4;
 
   /* border style */
   border: 0.1rem solid #fff;
@@ -136,3 +103,34 @@ header p {
 .banner:hover {
   animation: pulsate 0.6s infinite alternate;
 }
+
+/* Banner Animation */
+/* Animation effect references: https://css-tricks.com/how-to-create-neon-text-with-css/ */
+@keyframes pulsate {
+
+  0% {
+    text-shadow:
+      0 0 1px #fff,
+      0 0 10px #fff,
+      0 0 4px #00DEA4,
+      0 0 10px #00DEA4,
+      0 0 45px #00DEA4,
+      0 0 55px #00DEA4,
+      0 0 70px #00DEA4,
+      0 0 80px #00DEA4;
+  }
+
+  100% {
+    text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 20px #fff,
+      0 0 40px #00DEA4,
+      0 0 80px #00DEA4,
+      0 0 90px #00DEA4,
+      0 0 100px #00DEA4,
+      0 0 150px #00DEA4;
+  }
+}
+

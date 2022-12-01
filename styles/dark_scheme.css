@@ -3,17 +3,13 @@
 /* Dark mode theme */
 
 @media (prefers-color-scheme: dark) {
+
     body,
     main {
         background-color: #374B43;
     }
 
-    header div p {
-        color: #eee;
-    }
-
     .nav-buttons {
-        background-color: #A6B9AC;
         color: #000;
     }
 

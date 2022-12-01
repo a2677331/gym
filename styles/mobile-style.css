@@ -1,8 +1,36 @@
 @charset "utf-8";
 
-/* Mobile view styles: <= 768px */
+/* Desktop Styles: 769px and greater */
+@media only screen and (min-width: 851px) and (max-width: 1292px)  {
 
-@media only screen and (max-width: 768px) {
+    html, body {
+        min-width: 800px;
+    }
+
+    nav {
+        width: 100%;
+        margin: auto;
+    }
+
+    nav #legs-button::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    /* add line break every two videos */
+    #training-videos > div > div:nth-child(even):after {
+
+    }
+
+    .line-break:after {
+        content: '\A';
+        white-space:pre;
+    }
+}
+
+/* Mobile Styles: <= 480 */
+@media only screen and (max-width: 850px) {
 
     /* Html and body layouts for mobile */
 
@@ -19,9 +47,8 @@
 
     header {
         width: 90%;
-        margin: auto;
         line-height: 1.3rem;
-        margin-top: 1rem;
+        margin: 1rem auto auto;
     }
 
     header .banner {
@@ -83,5 +110,6 @@
         width: 90%;
         margin-left: auto;
     }
-
  }
+
+

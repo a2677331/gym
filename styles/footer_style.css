@@ -9,7 +9,7 @@
 }
 
 /* 
-Setup for stickey footer
+Setup for sticky footer
 Reference: https://css-tricks.com/couple-takes-sticky-footer/  
 */
 
@@ -27,7 +27,7 @@ body {
 /* Footer Styles */
 
 footer {
-    font-family: Cyber;
+    font-family: Cyber, sans-serif;
     color: #eee;
     background-color: #374B43;
     display: flex;
@@ -64,8 +64,7 @@ footer > div > hr {
     font-size: 1.8em;
     line-height: 1em;
     width: 16%;
-    margin: auto;
-    margin-right: 10px;
+    margin: auto 10px auto auto;
     text-align: right;
 }
 
