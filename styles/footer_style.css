@@ -24,6 +24,12 @@ body {
     flex-shrink: 0;
  }
 
+/* Rolling footer style */
+#footer-rolling-banner {
+    padding: 0px;
+}
+
+
 /* Footer Styles */
 
 footer {

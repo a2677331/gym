@@ -12,28 +12,3 @@ for (let i = 0; i < videos.length; i++) {
         this.currentTime = 0; // resume video track time
     });
 }
-
-
-// Add button style on an active page
-// const url = window.location.href;   // obtain url of current page
-// const muscleName = url.split('/').at(-1).split('.')[0]; // get muscle name
-// const button = document.getElementById(muscleName + "-button"); // get button elem
-// button.firstElementChild.style.color = "#000";
-// button.firstElementChild.style.backgroundColor = "#48f894";
-
-// window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-//     // divs[0].style.color = "red";
-//     if (event.matches) {
-//         button.firstElementChild.style.color = "#000";
-//         button.firstElementChild.style.backgroundColor = "#48f894";
-//     } else {
-//         button.firstElementChild.style.color = "#000";
-//         button.firstElementChild.style.backgroundColor = "#48f894";
-//     }
-
-// });
-
-
-// #legs-button > div {
-//     color: yellow;
-// }
