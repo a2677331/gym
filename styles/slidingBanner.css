@@ -6,22 +6,22 @@
     border-bottom: 4px solid #000;
 }
 
-#container > #photobanner p {
+#container > #rollingBanner p {
     font-family: sans-serif;
     display: inline-block;
     width: 350px;
     font-size: 2rem;
 }
 
-/*photobanner*/
-#photobanner {
+/*rollingBanner*/
+#rollingBanner {
     width: 8640px;
     background: #FFBF00;
     color: #000000;
     padding: 13px;
 }
 
-#photobanner p:hover {
+#rollingBanner p:hover {
     cursor: pointer;
 }
 
