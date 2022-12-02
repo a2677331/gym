@@ -85,7 +85,7 @@ img.icons {
     background-image: url('../images/legs.png');
 }
 
-#nav-container:has(#shoulder-button > div:hover) {
+#nav-container:has(#shoulders-button > div:hover) {
     background-image: url('../images/shoulder.png');
 }
 

@@ -13,6 +13,16 @@
         color: #000;
     }
 
+    .nav-buttons {
+        background: rgb(117, 117, 117);
+        color: #fff;
+    }
+
+    .nav-buttons:hover,
+    .nav-buttons:active {
+        color: #000;
+    }
+
     footer {
         background-color: rgb(51, 51, 51);
         color: #eee;

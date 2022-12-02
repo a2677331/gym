@@ -1,12 +1,21 @@
 @charset "utf-8";
 
-/* Desktop Styles: 769px and greater */
-@media only screen and (min-width: 851px) and (max-width: 1292px)  {
+/* Desktop Styles: between 801px and 1292px */
+@media only screen and (min-width: 801px) and (max-width: 1292px) {
 
-    html, body {
+    html,
+    body {
         min-width: 800px;
     }
 
+    /* Banner layout */
+
+    header .banner {
+        font-size: 4.3rem;
+        width: 750px;
+    }
+
+    /* Nav layout */
     nav {
         width: 100%;
         margin: auto;
@@ -19,22 +28,20 @@
     }
 
     /* add line break every two videos */
-    #training-videos > div > div:nth-child(even):after {
-
-    }
-
     .line-break:after {
         content: '\A';
-        white-space:pre;
+        white-space: pre;
     }
 }
 
-/* Mobile Styles: <= 480 */
-@media only screen and (max-width: 850px) {
+/* Mobile Styles: <= 800px */
+@media only screen and (max-width: 800px) {
 
     /* Html and body layouts for mobile */
 
-    html, body, footer {
+    html,
+    body,
+    footer {
         min-width: 360px;
         display: block;
     }
@@ -55,6 +62,11 @@
         font-size: 4rem;
         line-height: 4rem;
         padding: 1rem;
+    }
+
+    /* Banner caption layout */
+    #banner-caption>p {
+        font-size: 1.4rem;
     }
 
     /* navigation layout */
@@ -86,7 +98,7 @@
 
     /* Footer layout */
 
-    .left-footer, 
+    .left-footer,
     .right-footer {
         width: 90%;
         margin: auto;
@@ -103,13 +115,11 @@
     }
 
     /* the right-most footer style */
-    
-    #footer-link > div:nth-child(5) {
+
+    #footer-link>div:nth-child(5) {
         padding-bottom: 1.2rem;
         text-align: left;
         width: 90%;
         margin-left: auto;
     }
- }
-
-
+}
