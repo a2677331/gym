@@ -24,14 +24,7 @@ body {
     flex-shrink: 0;
  }
 
-/* Rolling footer style */
-#footer-rolling-banner {
-    padding: 0px;
-}
-
-
-/* Footer Styles */
-
+/* Contact Footer Styles */
 footer {
     font-family: Cyber, sans-serif;
     color: #eee;
@@ -42,7 +35,6 @@ footer {
 }
 
 /* Footer's <a> tag styles */
-
 footer a {
     text-decoration: none;
     color: #eee
@@ -58,14 +50,16 @@ footer a {
 }
 
 /* Footer's <hr> tag styles */
-
 footer > div > hr {
     width: 77px;
     margin: 5px 0px 5px 0px;
-  }
+}
+
+#footer-link > div:nth-child(4) > hr {
+    width: 143px; /* to make hr in sources part longer */
+}
 
 /* left footer and right footer styles */
-
 .left-footer {
     font-size: 1.8em;
     line-height: 1em;
@@ -80,7 +74,6 @@ footer > div > hr {
 }
 
 /* the right-most footer style */
-
 #footer-link > div:nth-child(5) {
     width: 40%;
     text-align: center;

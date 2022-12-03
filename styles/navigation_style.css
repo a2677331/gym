@@ -45,7 +45,6 @@ img.icons {
 }
 
 /* Styles applied to all buttons */
-
 .nav-buttons {
     line-height: 50px;
     width: 280px;
@@ -61,14 +60,12 @@ img.icons {
 }
 
 /* Hover styles for navi buttons */
-
 .nav-buttons:hover {
     background-color: #48f894;
     will-change: transform; /* Optimize for animation */
 }
 
 /* Pressed styles for navi buttons */
-
 .nav-buttons:active {
     box-shadow: 
     black 2px 2px 1px 0px inset, 

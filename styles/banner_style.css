@@ -2,7 +2,6 @@
 
 
 /* Font style */
-
 @font-face {
   font-family: Cyber;
   src: url("../fonts/Blender-Pro-Bold.otf");
@@ -16,7 +15,6 @@
 
 
 /* Skip link style */
-
 #skip-to-content-link {
   background: #fff;
   color: #000;
@@ -33,7 +31,6 @@
 
 
 /* Banner Style */
-
 header {
   font-family: 'Exo 2', Cyber, sans-serif;
   text-align: center;
@@ -45,7 +42,6 @@ header {
 
 
 /* Header paragraph style */
-
 header p {
   font: normal 28px Cyber, sans-serif;
   margin-top: 15px;
@@ -55,7 +51,6 @@ header p {
 
 
 /* Header caption style */
-
 #banner-caption {
   transition: transform 0.55s;
   /* shrink slower */

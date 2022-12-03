@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 /* Styles for videos class */
-
 #training-videos {
     width: 100%;
     text-align: center;
@@ -30,7 +29,6 @@
 }
 
 /* Styles for all video tags */
-
 video {
     height: 100%;
 }

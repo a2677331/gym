@@ -1,0 +1,44 @@
+/* Rolling footer style */
+#footer-rolling-banner {
+    padding: 0px;
+}
+
+/* Container that wraps the whole banner */
+#container {
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+}
+
+/*rollingBanner*/
+#rollingBanner { 
+    width: 8640px; /* banner is 8640px long */
+    background: #FFBF00;
+    color: #000000;
+}
+
+ /* Each word style inside the banner */
+#rollingBanner p {
+    font-family: sans-serif;
+    display: inline-block;
+    width: 350px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 16px;
+    text-align: center;
+}
+
+/*keyframe animations*/
+#first {
+    /* First item in banner */
+    animation: bannermove 50s linear infinite; 
+    /* animation takes 50s to complete (rolling speed) */
+}
+
+@keyframes bannermove {
+    /* To move the whole banner left from 0 to -5746px */
+    0% { margin-left: 0px; }
+    100% { margin-left: -4600px; }
+}
