@@ -90,7 +90,7 @@ div.box:nth-child(2) > div:nth-child(2) > hr:nth-child(2) {
     border-radius: 9px;
     font-family: Cyber, serif;
     font-size: 1.5rem;
-    border: 5px solid #000;
+    border: 4px solid #000;
     background-color: rgb(217, 215, 215);
 }
 
