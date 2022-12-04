@@ -56,8 +56,8 @@
     }
 
     header .banner {
-        font-size: 4rem;
-        line-height: 4rem;
+        font-size: 2.8rem;
+        line-height: 2.8rem;
         padding: 1rem;
     }
 
@@ -81,10 +81,15 @@
     }
 
     /* videos layout */
-    main .videos {
+    .videos {
         margin: 1rem;
         width: 90%;
         height: auto;
+    }
+
+    .videos:hover {     /* no need to transform when on mobile mode */
+        transition: none !important; 
+        transform: none !important;
     }
 
     main video {
