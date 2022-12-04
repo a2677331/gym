@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 /* font type for navigation */
-
 @font-face {
     font-family: Cyber;
     src: url("../fonts/Blender-Pro-Bold.otf");
@@ -9,7 +8,6 @@
   }
 
 /* Navigation bar styles */
-
 nav {
     font-family: Cyber, arial, sans-serif;
     float: left;
@@ -18,7 +16,6 @@ nav {
 }
 
 /* clear fix for float left */
-
 nav::after {
     content: "";
     clear: both;
@@ -26,7 +23,6 @@ nav::after {
 }
 
 /* Navigation button container styles */
-
 #nav-container {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -35,7 +31,6 @@ nav::after {
 }
 
 /* navi button icons */
-
 img.icons {
     position: absolute;
     top: 2px;
@@ -71,21 +66,4 @@ img.icons {
     black 2px 2px 1px 0px inset, 
     rgba(255, 255, 255, 0.5) -3px -3px 1px 1px inset;
     transform: scale(0.97);
-}
-
-/* To show different background .png images when hovering over buttons */
-#nav-container:has(a:nth-child(1) > div:hover) { /* Does NOT pass CSS validation, but works only in this way */
-    background-image: url('../images/chest.png');
-}
-
-#nav-container:has(#legs-button > div:hover) {   /* Does NOT pass CSS validation, but works only in this way */
-    background-image: url('../images/legs.png');
-}
-
-#nav-container:has(#shoulders-button > div:hover) { /* Does NOT pass CSS validation, but works only in this way */
-    background-image: url('../images/shoulder.png');
-}
-
-#nav-container:has(#back-button > div:hover) {      /* Does NOT pass CSS validation, but works only in this way */   
-    background-image: url('../images/back.png');
 }
