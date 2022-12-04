@@ -2,29 +2,37 @@
 
 // Only execute if tablet mode and desktop mode
 if (window.innerWidth > 800) {
-  // Enable videos on the main page to play automatically on mouse over, stop and resume on mouse out.
-  const videos = document.getElementsByClassName("videos index-page"); // Only for index page's videos
 
-  for (let i = 0; i < videos.length; i++) {
+  /**** Handle Video tags interaction ****/
+  const videos = document.getElementsByClassName("videos index-page");
+  let isPlaying = false; // make sure pause() does not interupt play() request
+
+  // handle video play on mouse over
+  for (let i = 0; i < videos.length; i++) { // For each video tag
     videos[i].addEventListener("mouseover", function () {
-      this.children[0].play(); // play the video tag
 
-      // const playPromise = this.children[0].play(); // play the video tag
-      // if (playPromise !== null) {
-      //   playPromise.catch(() => {
-      //     this.children[0].play();
-      //   });
-      // }
-      
+      // get video status
+      isPlaying =
+        this.children[0].currentTime > 0 &&
+        !this.children[0].paused &&
+        !this.children[0].ended &&
+        this.children[0].readyState > this.children[0].HAVE_CURRENT_DATA;
+
+      // play video
+      this.children[0].play(); 
     });
 
+    // handle video stop and resume event on mouse out
     videos[i].addEventListener("mouseout", function () {
-      this.children[0].pause(); // stop playing when mouse is not hovering over
-      this.children[0].currentTime = 0; // resume video track time
+      if (isPlaying) {
+        this.children[0].pause(); // stop playing when mouse is not hovering over
+        this.children[0].currentTime = 0; // resume video track time
+      }
     });
   }
 
-  // Pause the rolling banner when mouse is hovering over, resume to run while the mouse is out.
+
+  /**** Handle Rolling Banner interaction ****/
   const rollingBanner = document.getElementById("rollingBanner");
 
   rollingBanner.addEventListener("mouseover", function () {
@@ -36,7 +44,8 @@ if (window.innerWidth > 800) {
     rollingBanner.firstElementChild.style.animationPlayState = "running"; // run animation
   });
 
-  // show background images when hovering over muscle buttons, and disappear when mouse out.
+
+  /**** Handle Button backgroundImage interaction ****/
   const nav = document.getElementById("nav-container");
 
   // For Chest button

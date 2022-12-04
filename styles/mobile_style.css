@@ -40,35 +40,38 @@
     html,
     body,
     footer {
-        min-width: 360px;
+        min-width: 375px;
         display: block;
     }
 
     body {
-        padding-top: 10px
+        padding-top: 10px;
+    }
+
+    header, 
+    main nav .nav-buttons, 
+    main #training-videos {
+        max-width: 455px;
     }
 
     /* Banner layout */
     header {
-        width: 90%;
-        line-height: 1.3rem;
+        width: 95%;
         margin: 1rem auto auto;
     }
 
     header .banner {
-        font-size: 2.8rem;
-        line-height: 2.8rem;
-        padding: 1rem;
+        font-size: 2.2rem;
     }
 
     /* Banner caption layout */
     #banner-caption>p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     /* navigation layout */
     main nav .nav-buttons {
-        width: 90%
+        width: 90%;
     }
 
     main nav #nav-container {
