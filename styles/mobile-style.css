@@ -96,6 +96,11 @@
         width: 100%;
     }
 
+    /* iFrame */
+    iframe {
+        height: 166px;
+    }
+
     /* Footer layout */
     .left-footer,
     .right-footer {
