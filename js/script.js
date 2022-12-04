@@ -1,6 +1,15 @@
 "use strict";
 
-// Only execute if tablet mode and desktop mode
+/* Handle the input from user and search on YouTube */
+const searchButton = document.getElementById('search-button');
+const searchInput = document.getElementById('search-input');
+searchButton.onclick = function() {
+  let url = 'https://www.youtube.com/results?search_query=' + searchInput.value;
+  window.open(url);
+};
+
+
+// Codes that only execute if tablet mode and desktop mode
 if (window.innerWidth > 800) {
 
   /**** Handle Video tags interaction ****/

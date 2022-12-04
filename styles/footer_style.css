@@ -12,27 +12,38 @@
 Setup for sticky footer
 Reference: https://css-tricks.com/couple-takes-sticky-footer/  
 */
-
 body {
     display: flex;
     flex-direction: column;
  }
+
  main {
     flex: 1 0 auto;
  }
- footer {
-    flex-shrink: 0;
- }
 
-/* Contact Footer Styles */
+ /* Contact Footer Styles */
 footer {
     font-family: Cyber, sans-serif;
     color: #eee;
     background-color: #374B43;
     display: flex;
     width: 100%;
-    padding: 5px;
+    padding: 1.5rem;
 }
+
+ footer {
+    flex-shrink: 0;
+    /* place all elems evenly */
+    justify-content: space-evenly;
+ }
+
+ .box {
+    display: flex;
+    /* vertical and horizontal center the footer elems */
+    align-items: center;
+    justify-content: center; 
+    column-gap: 20px;
+ }
 
 /* Footer's <a> tag styles */
 footer a {
@@ -49,42 +60,57 @@ footer a {
     transition: color 0.1s ease-in;
 }
 
+
 /* Footer's <hr> tag styles */
-footer > div > hr {
+footer div hr {
     width: 77px;
     margin: 5px 0px 5px 0px;
 }
 
-#footer-link > div:nth-child(4) > hr {
+div.box:nth-child(2) > div:nth-child(2) > hr:nth-child(2) {
     width: 143px; /* to make hr in sources part longer */
 }
 
 /* left footer and right footer styles */
 .left-footer {
-    font-size: 1.8em;
-    line-height: 1em;
-    width: 16%;
-    margin: auto 10px auto auto;
-    text-align: right;
+    font-size: 1.5em;
 }
 
 .right-footer {
     font-size: 1em;
-    margin: auto;
 }
 
-/* the right-most footer style */
-#footer-link > div:nth-child(5) {
-    width: 40%;
-    text-align: center;
-    margin-left: 10px; 
-}
-
-#footer-link > div:nth-child(5) > p > a {
+.search-left > p {
     color:rgb(72, 248, 148);
 }
 
-#footer-link > div:nth-child(5) > p > a:hover {
-    text-decoration: underline;
+/* Styles for input box */
+#search-input,
+#search-button {
+    border-radius: 9px;
+    font-family: Cyber, serif;
+    font-size: 1.5rem;
+    border: 5px solid #000;
+    background-color: rgb(217, 215, 215);
 }
 
+
+#search-input {
+    width: 220px;
+}
+
+/* Styles for search button */
+#search-button {
+    padding: 10px 20px;
+    margin-left: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+  }
+
+  #search-button:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
