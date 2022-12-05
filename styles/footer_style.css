@@ -72,8 +72,8 @@ div.box:nth-child(2) > div:nth-child(2) > hr:nth-child(2) {
 }
 
 /* left footer and right footer styles */
-.left-footer {
-    font-size: 1.5em;
+.left-footer > p {
+    font-size: 2em;
 }
 
 .right-footer {
@@ -108,9 +108,9 @@ div.box:nth-child(2) > div:nth-child(2) > hr:nth-child(2) {
     display: inline-block;
     cursor: pointer;
     color: black;
-  }
+}
 
-  #search-button:hover {
+#search-button:hover {
     background-color: #4CAF50;
     color: white;
-  }
+}

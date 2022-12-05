@@ -1,13 +1,11 @@
 "use strict";
 
-
-// Main
+/* Functions used in Desktop and Tablet View */
 if (window.innerWidth > 800) {
   handleButtonBackgroundImage();
   handleRollingBanner();
   handleVideosPlayAndResume();
 }
-
 
 /* Handle the input from user and search on YouTube */
 function handleButton() {

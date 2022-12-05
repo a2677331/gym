@@ -40,18 +40,11 @@ header {
   line-height: 2.6em;
 }
 
-
-/* Header paragraph style */
-header p {
+/* Header caption style */
+#banner-caption {
   font: normal 28px Cyber, sans-serif;
   margin-top: 15px;
   color: #fff;
-  will-change: animation;
-}
-
-
-/* Header caption style */
-#banner-caption {
   transition: transform 0.55s;
   /* shrink slower */
   will-change: scale;
@@ -67,6 +60,8 @@ header p {
 
 /* Banner style */
 .banner {
+  will-change: animation;
+
   /* Text style */
   font-size: 5rem;
   color: #fff;
@@ -127,5 +122,6 @@ header p {
       0 0 100px #00DEA4,
       0 0 150px #00DEA4;
   }
+
 }
 
