@@ -60,6 +60,10 @@ footer a {
     transition: color 0.1s ease-in;
 }
 
+#footer-link {
+    border-top: 4px solid #000;
+}
+
 
 /* Footer's <hr> tag styles */
 footer div hr {

@@ -87,11 +87,12 @@
 
     #nav-container {
         padding-top: 1rem;
-        padding-bottom: 0;
+        padding-bottom: 1rem;
     }
 
     #training-videos {
         padding-bottom: 2rem;
+        margin-bottom: 0rem !important;
     }
 
     /* videos layout */
