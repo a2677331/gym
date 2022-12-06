@@ -1,5 +1,5 @@
 /* Rolling footer style */
-#footer-rolling-banner {
+#rolling-banner {
     padding: 0px;
 }
 
@@ -23,22 +23,22 @@
 #rollingBanner p {
     font-family: sans-serif;
     display: inline-block;
-    width: 350px;
-    font-size: 2rem;
+    width: 200px;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin: 16px;
+    margin: 8px;
     text-align: center;
 }
 
 /*keyframe animations*/
 #first {
     /* First item in banner */
-    animation: bannermove 50s linear infinite; 
-    /* animation takes 50s to complete (rolling speed) */
+    animation: bannermove 40s linear infinite; 
+    /* animation takes 40s to complete (rolling speed) */
 }
 
 @keyframes bannermove {
-    /* To move the whole banner left from 0 to -5746px */
     0% { margin-left: 0px; }
-    100% { margin-left: -4600px; }
+    100% { margin-left: -1746px; } 
+    /* How fast the banner moves */
 }

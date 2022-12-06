@@ -51,10 +51,6 @@
         display: block;
     }
 
-    body {
-        padding-top: 10px;
-    }
-
     header,
     main nav .nav-buttons,
     main #training-videos {
