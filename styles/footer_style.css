@@ -71,6 +71,16 @@ div.box:nth-child(2) > div:nth-child(2) > hr:nth-child(2) {
     width: 143px; /* to make hr in sources part longer */
 }
 
+
+/* Styles for input box */
+#search-input,
+#search-button {
+    border-radius: 9px;
+    font-family: Cyber, serif;
+    font-size: 1.5rem;
+    border: 4px solid #000;
+}
+
 /* left footer and right footer styles */
 .left-footer > p {
     font-size: 2em;
@@ -84,19 +94,9 @@ div.box:nth-child(2) > div:nth-child(2) > hr:nth-child(2) {
     color:rgb(72, 248, 148);
 }
 
-/* Styles for input box */
-#search-input,
-#search-button {
-    border-radius: 9px;
-    font-family: Cyber, serif;
-    font-size: 1.5rem;
-    border: 4px solid #000;
-    background-color: rgb(217, 215, 215);
-}
-
-
 #search-input {
     width: 220px;
+    background-color: rgb(217, 215, 215);
 }
 
 /* Styles for search button */
@@ -108,9 +108,12 @@ div.box:nth-child(2) > div:nth-child(2) > hr:nth-child(2) {
     display: inline-block;
     cursor: pointer;
     color: black;
+    background-color: #4CAF50;
 }
 
 #search-button:hover {
-    background-color: #4CAF50;
     color: white;
+    text-decoration: underline;
 }
+
+
