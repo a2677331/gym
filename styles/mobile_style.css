@@ -5,21 +5,16 @@
 
     html,
     body {
-        min-width: 800px;
+        min-width: 801px;
     }
 
     /* Banner layout */
     header .banner {
-        font-size: 4.3rem;
+        font-size: 4.7rem;
         width: 750px;
     }
 
     /* Nav layout */
-    nav {
-        width: 100%;
-        margin: auto;
-    }
-
     nav #legs-button::after {
         content: "";
         clear: both;
@@ -52,7 +47,7 @@
     /* Html and body layouts for mobile */
     html,
     body {
-        min-width: 375px;
+        min-width: 320px;
         display: block;
     }
 
@@ -64,6 +59,8 @@
     main nav .nav-buttons,
     main #training-videos {
         max-width: 455px;
+        margin: auto;
+        margin-bottom: 1rem;
     }
 
     /* Banner layout */
@@ -80,20 +77,21 @@
     /* Banner caption layout */
     #banner-caption>p {
         font-size: 1.2rem;
+        margin-bottom: 1rem;
     }
 
     /* navigation layout */
-    main nav .nav-buttons {
-        width: 90%;
+    .nav-buttons {
+        width: 95%;
     }
 
-    main nav #nav-container {
+    #nav-container {
         padding-top: 1rem;
         padding-bottom: 0;
     }
 
-    main #training-videos {
-        padding-bottom: 1rem;
+    #training-videos {
+        padding-bottom: 2rem;
     }
 
     /* videos layout */
@@ -103,7 +101,7 @@
 
     .videos {
         margin: 1rem auto 1rem auto;
-        width: 97%;
+        width: 95%;
         height: auto;
     }
 
