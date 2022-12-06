@@ -10,7 +10,7 @@
 
     /* Banner layout */
     header .banner {
-        font-size: 4.7rem;
+        font-size: 4.65rem;
         width: 750px;
     }
 
@@ -76,7 +76,7 @@
 
     /* Banner caption layout */
     #banner-caption>p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-bottom: 1rem;
     }
 
