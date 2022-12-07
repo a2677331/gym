@@ -15,7 +15,6 @@ function handleButton() {
 }
 
 
-
 /**** Handle Button backgroundImage interaction ****/
 function handleButtonBackgroundImage() {
     const nav = document.getElementById("nav-container");

@@ -46,3 +46,8 @@ iframe {
    height: 100px;
 }
 
+#buy-coffee {
+   display: block;
+   margin: auto;
+   width: 240px;
+ }
