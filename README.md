@@ -1,5 +1,5 @@
 # gym
 
 ## TODO:
-[] amazon ads
-[] google ads
+Amazon ads
+Google ads
